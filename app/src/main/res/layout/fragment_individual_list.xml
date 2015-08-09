@@ -1,0 +1,39 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.android.sunshine.IndividualList$PlaceholderFragment"
+    android:theme="@style/AppTheme">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/individual_listview_forecast"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/addItem"
+        android:onClick="onClick"
+        android:layout_gravity="right|bottom"
+        android:background="@drawable/add"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/addUser"
+            android:onClick="onClick"
+            android:layout_alignParentBottom="true"
+            android:layout_toStartOf="@+id/addItem"
+            android:background="@drawable/adduser" />
+
+
+    </RelativeLayout>
+
+</FrameLayout>
